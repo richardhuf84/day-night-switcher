@@ -11,7 +11,7 @@ const Background = styled.section`
   background-color: ${props => (backgroundColors[props.mode])};
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   transition: all 100ms ease;
   padding: 2rem;
   min-height: 100vh;
