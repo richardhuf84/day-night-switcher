@@ -9,16 +9,31 @@ const StyledCanvas = styled.div({
 
 });
 
+const celestialBodyStyles = `
+  transform: translateY(-40px) translateX(180px);
+  position: relative;
+  z-index: 1;
+  animation: CelestialBody 400ms ease-in forwards alternate;
+
+  @keyframes CelestialBody {
+    0% {
+      transform: translateY(0) translateX(170px);
+    },
+    90% {
+      transform: translateY(-50px) translateX(170px);
+    },
+    100% {
+      transform: translateY(-40px) translateX(170px);
+    }
+  }
+`;
+
 const StyledSun = styled(Sun)`
-  transform: translateY(-40px) translateX(180px);
-  position: relative;
-  z-index: 1;
-`;
+${celestialBodyStyles}`;
+
 const StyledMoon = styled(Moon)`
-  transform: translateY(-40px) translateX(180px);
-  position: relative;
-  z-index: 1;
-`;
+${celestialBodyStyles}`;
+
 const StyledCloudLight = styled(CloudLight)`
   position: relative;
   z-index: 2;
