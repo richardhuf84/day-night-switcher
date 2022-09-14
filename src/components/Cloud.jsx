@@ -3,7 +3,6 @@ import { ReactComponent as CloudLight } from '../svg/cloudLight.svg';
 import { ReactComponent as CloudDark } from '../svg/cloudDark.svg';
 import { ReactComponent as Sun } from '../svg/sun.svg';
 import { ReactComponent as Moon } from '../svg/moon.svg';
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
 const StyledCanvas = styled.div({
